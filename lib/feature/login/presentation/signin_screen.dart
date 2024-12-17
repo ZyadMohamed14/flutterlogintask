@@ -70,9 +70,9 @@ class SignInScreen extends StatelessWidget {
             }
           },
           builder: (context, state) {
-            return SingleChildScrollView(
-              child: Padding(
-                padding: const EdgeInsets.all(24.0),
+            return Padding(
+              padding: const EdgeInsets.all(24.0),
+              child: SingleChildScrollView(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -120,7 +120,7 @@ class SignInScreen extends StatelessWidget {
                       ),
                     ),
                     const SizedBox(height: 20),
-              
+                
                     const Text("Password", style: TextStyle(fontSize: 16)),
                     const SizedBox(height: 10),
                     // Password TextField with validation
@@ -147,8 +147,8 @@ class SignInScreen extends StatelessWidget {
                       ),
                     ),
                     const SizedBox(height: 40),
-              
-                    const Spacer(),
+
+                    SizedBox(height: 100),
                     SizedBox(
                       width: double.infinity,
                       height: 50,
